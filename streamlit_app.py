@@ -5,7 +5,9 @@ from PIL import Image
 from visuals import header, revealer, erfaring, erfaringsbokse, intro, animation, animation2
 
 im = Image.open(r"cv-billede.jpg")
-st.set_page_config(page_title="Ronja Solberg", page_icon=im, layout="wide")
+icon = r"icon.png"
+
+st.set_page_config(page_title="Ronja Solberg", page_icon=icon, layout="wide")
 
 col_, col1, col2 = st.columns([0.4,4,5])
 with col1:
