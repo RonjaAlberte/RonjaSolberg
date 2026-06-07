@@ -640,13 +640,13 @@ h3::after {{
     <div class="reveal">
         <div style="height:20px;"></div>
         {talent}
+        <div style="height:40px;"></div>
         <span class="divider"></span>
+        <div style="height:10px;"></div>
         </div>
     </div>
 
 </div>
-
-<div style="height:40px;"></div>
 
 <div class="kontakt-boks">
     <strong>Kontakt</strong><br>
