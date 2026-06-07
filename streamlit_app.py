@@ -16,8 +16,6 @@ with col1:
 with col2:
     header()
 
-st.divider()
-
 components.html(
     portfolio,
     height=2500,

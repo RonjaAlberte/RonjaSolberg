@@ -25,9 +25,9 @@ animation2 = """
     """
 
 intro =  f"""
-            <h3>
+            <h2>
             Introduktion
-            </h3>
+            </h2>
 
             <p>
             Med min tidligere erfaring som nyhedsjournalist i DR, og mine digitale
@@ -66,8 +66,8 @@ erfarings_html = """
 
 .accordion-item {
     margin-bottom: 12px;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
+    border: 1px solid #C8E6C9;
+    border-radius: 15px;
     overflow: hidden;
     background: white;
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
@@ -263,17 +263,17 @@ ul {
 """
 
 erfaring = f"""            
-            <h3>
+            <h2>
             Erfaring
-            </h3>
+            </h2>
 
             {erfarings_html}
             """
 
 komp = f"""            
-            <h3>
+            <h2>
             Kompetencer
-            </h3>
+            </h2>
 
             <div class="skills">
                 <span class="skill">Nyhedsproduktion</span>
@@ -284,6 +284,70 @@ komp = f"""
                 <span class="skill">Struktureret og analytisk</span>
             </div>
             """
+
+cand = f"""
+    <style>
+    .udd {{
+        text-align: center;
+    }}
+    .project {{
+        font-weight: 400;
+        color: #888;
+    }}
+
+    </style>
+    <h2>
+    Uddannelse
+    </h2>
+
+    <div class="skills">
+        <span class="udd"><h3>Cand.Scient i Data Science</h3>
+            <div class="company">
+                Syddansk Universitet
+            </div>
+            <div class="company">
+                2023 – 2026
+            </div>
+
+            <p>
+            Med min kandidat i Data Science har jeg fået gode redskaber til min datajournalistiske værktøjskasse. 
+            Udover de vanlige fag i blandt andet Python, interaktiv visualisering og maskinlæring, 
+            tog jeg et valgfag i Undersøgende Journalistik fra cand.public.
+            </p>
+
+            <p>
+            Jeg afsluttede min kandidat med 12 for mit speciale.
+            </p>
+            <div class="project"> 
+                <i>Fra Dagsorden til Deadline: AI i Lokaljournalistik</i>
+            </div>
+        </span>
+
+        <span class="udd"><h3>Journalist</h3>
+            <div class="company">
+                Danmarks Medie- og Journalisthøjskole
+            </div>
+            <div class="company">
+                2017 – 2021
+            </div>
+
+            <p>
+            I løbet af uddannelsen tog jeg valgfag i datajournalistik og EU-politik. 
+            Det var her jeg blev bidt af de mange muligheder og historier, der gemmer sig i OSINT.
+            Samtidig fik jeg en stor interesse for al den politik, der ikke foregår på Christiansborg, 
+            men ude i kommunerne, regionerne og i EU. 
+            </p>
+
+            <p>
+            Jeg afsluttede med 10 for mit bachelorprojekt.
+            </p>
+            <div class="project"> 
+                <i>Den sidste indianer: Fiskemangel i de indre danske farvande</i>
+            </div>
+        </span>
+
+    </div>
+    """
 
 portfolio = f"""
 <style>
@@ -301,6 +365,22 @@ body {{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+}}
+
+.divider {{
+    content: "";
+    display: block;
+    width: 900px;
+    height: 2px;
+    margin: 10px auto 0 auto;
+    margin-bottom: 0px;
+    background: #C8E6C9;
+    border-radius: 999px;
+}}
+
+h2 {{
+    text-align: center;
+    margin-bottom: 20px;
 }}
 
 h3 {{
@@ -381,12 +461,25 @@ h3::after {{
             <div class="section reveal">
                 {erfaring}
             </div>
-
+            
         </div>
 
     </div>
 
-    <div style="height:100px;"></div>
+    <div class="reveal">
+        <span class="divider"></span>
+    </div>
+
+    <div style="height:10px;"></div>
+
+    <div class="reveal">
+        {cand}
+    </div>
+    
+    <div style="height:10px;"></div>
+    <div class="reveal">
+        <span class="divider"></span>
+    </div>
 
     <div class="reveal">
         {animation}
