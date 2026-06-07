@@ -18,20 +18,6 @@ with col2:
 
 components.html(
     portfolio,
-    height=2500,
+    height=2600,
     scrolling=True
 )
-
-# _, subcol1, _, subcol2, _ = st.columns([0.5,4,1,4,0.5])
-# with subcol1:
-#     revealer(intro, 280)
-#     revealer(komp, 90)
-#     components.html(animation2, height=300)
-
-# with subcol2:
-#     revealer(erfaring, 90)
-#     erfaringsbokse()
-        
-# _, subsub1, _, subsub2, _ = st.columns([0.5,4,1,4,0.5])
-# with subsub1:
-#     components.html(animation, height=600)

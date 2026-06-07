@@ -19,7 +19,7 @@ animation2 = """
                              
     <dotlottie-wc 
         src="https://lottie.host/6b3d8d8d-3810-4029-a282-ee1afc8d0fa0/cFocZa642X.lottie" 
-        style="width: 300px;height: 200px" 
+        style="width: 300px;height: 300px;transform: translateX(200px) rotate(30deg);" 
         autoplay loop>
     </dotlottie-wc>
     """
@@ -52,13 +52,11 @@ intro =  f"""
             og som kan være med til at bygge bro over de grøfter, 
             der kun er blevet dybere mellem os over de seneste år. 
             </p>
-
-            {animation2}
         """
 
 ansogning1 = """
             <p>
-                For der er blevet langt imellem danskerne. 
+                Der er blevet langt imellem danskerne. 
                 Unge mænd og kvinder driver længere fra hinanden på det politiske spektrum, 
                 uligheden mellem by og land vokser, og en mere polariseret retorik har fundet indtog i Danmark. 
                 Derfor er der brug for journalistik, der giver perspektiv i en verden, 
@@ -78,11 +76,9 @@ samling = f"""
             <p> Et <i>samlingspunkt.</i></p>
         </div>"""
 samling2 = """<p>
-                Og det er DR for rigtig mange danskere.  
-                Derfor søger jeg stillingen som digital journalist i Digitale Nyhedsprodukter.
+                Det er DR for rigtig mange danskere, og derfor søger jeg stillingen som journalist i Digitale Nyhedsprodukter.
             </p>"""
 ansogning2 = """
-        <div class="skills">
             <p>
                 Jeg brænder nemlig for at gøre komplekse historier forståelige, engagerende og relevante for brugerne. 
                 Det gælder både i den daglige nyhedsdækning og i de større projekter, hvor der er mulighed 
@@ -97,6 +93,9 @@ ansogning2 = """
                 tekniske discipliner. For mig handler data ikke om teknologi for teknologiens skyld, 
                 men om at finde nye historier, nye vinkler og nye måder at skabe forståelse på.
             </p>
+            """
+
+ansogning3 = """
             <p>
                 Senest har jeg arbejdet som datajournalist hos Gravercentret, hvor jeg udviklede et projekt, 
                 der automatisk indsamlede data fra kommuner og regioner, opsummerede politiske dagsordener 
@@ -113,6 +112,9 @@ ansogning2 = """
                 data, design og teknologi arbejder sammen om at besvare spørgsmålet: 
                 Hvad har brugerne egentlig brug for at forstå?
             </p>
+            """
+
+ansogning4 ="""
             <p>
                 Som gæsteunderviser og eksaminator på DMJX har jeg samtidig fået styrket min evne til at 
                 identificere den gode historie og den stærke vinkel. Gennem vejledning af studerende og vurdering
@@ -125,17 +127,13 @@ ansogning2 = """
                 at udvikle nye måder at formidle de store historier på. Jeg vil gerne være med til at skabe de produkter, 
                 der får brugerne til at stoppe op, blive klogere og se verden i et større perspektiv.
             </p>
-        </div>
-"""
-
-outro = """
-        <p>
-            Jeg ser frem til muligheden for at uddybe min motivation og fortælle mere om, 
-            hvordan jeg kan bidrage til Digitale Nyhedsprodukter.
-        </p>
-        <p>Med venlig hilsen</p>
-        <p><i>Ronja Solberg</i></p>
-"""
+            <p>
+                Jeg ser frem til muligheden for at uddybe min motivation og fortælle mere om, 
+                hvordan jeg kan bidrage til Digitale Nyhedsprodukter.
+            </p>
+            <p>Med venlig hilsen</p>
+            <p><i>Ronja Solberg</i></p>
+            """
 
 erfarings_html = """
 <style>
@@ -377,7 +375,7 @@ cand = f"""
 
     </style>
     <h2>
-    Uddannelse
+    Uddannelse og udmærkelser
     </h2>
 
     <div class="skills">
@@ -429,6 +427,18 @@ cand = f"""
     </div>
     """
 
+talent = """
+    <div class="talent">
+        <span class="udd"><h3>Talent Fellow</h3>
+        <div class="company">
+            Den Fynske Bladfond
+        </div>
+        <p>
+        Min specialemakker Jonatan May og jeg blev udnævnt til Talent Fellows for vores specialeprojekt.
+        Vi modtog et legat og muligheden for at sparre med journalister i branchen, der gav feedback
+        på vores prototype, foruden et styrket netværk og adgang til MediaTech Festival. 
+    </div>
+    """
 
 portfolio = f"""
 <style>
@@ -515,6 +525,37 @@ h3::after {{
     color: white;
 }}
 
+.midt {{
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+}}
+
+.talent {{
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}}
+
+.kontakt-boks {{
+    position: sticky;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}}
+
+.kontakt-boks a {{
+    color: inherit;
+    text-decoration: none;
+}}
+
+.kontakt-boks a:hover {{
+    text-decoration: underline;
+}}
+
 @media (max-width: 900px) {{
     .grid {{
         grid-template-columns: 1fr;
@@ -533,17 +574,9 @@ h3::after {{
             <div class="section reveal">
                 {intro}
             </div>
-
             <div class="section reveal">
-                {ansogning1}
+                {animation2}
             </div>
-            <div class="section reveal">
-                {samling}
-            </div>
-            <div class="section reveal">
-                {samling2}
-            </div>
-
         </div>
 
         <div>
@@ -556,21 +589,37 @@ h3::after {{
     </div>
 
     <div class="reveal">
-        {ansogning2}
+        <div style="height:30px;"></div>
+        <h3>Min motivation</h3>
     </div>
-        
+
+    <div class="midt reveal">
+        {ansogning1}
+    </div>
+    <div class="midt reveal">
+        {samling}
+    </div>
+    <div class="midt reveal">
+        {samling2}
+    </div>
+
     <div class="grid">
 
         <div>
 
             <div class="section reveal">
-                {outro}
+                {ansogning2}
+            </div>
+            <div class="section reveal">
+                {ansogning3}
             </div>
 
         </div>
 
         <div>
-
+            <div class="section reveal">
+                {ansogning4}
+            </div>
             <div class="section reveal">
                 {komp}
             </div>
@@ -586,10 +635,26 @@ h3::after {{
 
     <div class="reveal">
         {cand}
-        <div style="height:10px;"></div>
-        <span class="divider"></span>
     </div>
 
+    <div class="reveal">
+        <div style="height:20px;"></div>
+        {talent}
+        <span class="divider"></span>
+        </div>
+    </div>
+
+</div>
+
+<div style="height:40px;"></div>
+
+<div class="kontakt-boks">
+    <strong>Kontakt</strong><br>
+    <a href="mailto:ronjaalberte@gmail.com">ronjaalberte@gmail.com</a><br>
+    <a href="tel:+4560601102">+45 6060 1102</a><br>
+    <a href="https://www.linkedin.com/in/ronjasolberg/" target="_blank">
+        linkedin.com/in/ronjasolberg
+    </a>
 </div>
 
 <script>
