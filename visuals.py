@@ -19,12 +19,12 @@ animation2 = """
                              
     <dotlottie-wc 
         src="https://lottie.host/6b3d8d8d-3810-4029-a282-ee1afc8d0fa0/cFocZa642X.lottie" 
-        style="width: 600px;height: 300px" 
+        style="width: 300px;height: 200px" 
         autoplay loop>
     </dotlottie-wc>
     """
 
-intro =  """
+intro =  f"""
             <h3>
             Introduktion
             </h3>
@@ -40,19 +40,22 @@ intro =  """
             letforståelige for <i>alle</i> danskere; og har oven i hatten erfaring med at
             gøre det gennem engagerende digitale og visuelle virkemidler.
             </p>
+
+            <p>
+            Det er min overbevisning at en af grundpillerne for et velfungerende demokrati, 
+            er gjort af en befolkning, der forstår verden omkring dem - også det og dem, 
+            der ligger langt fra deres egen hverdag. 
+            </p>
+
+            <p>
+            Derfor vil det glæde mig at være med til at skabe historier, der fanger danskerne, 
+            og som kan være med til at bygge bro over de grøfter, 
+            der kun er blevet dybere mellem os over de seneste år. 
+            </p>
+
+            {animation2}
+
         """
-
-erfaring = """            
-            <h3>
-            Erfaring
-            </h3>
-            """
-
-komp = """            
-            <h3>
-            Kompetencer
-            </h3>
-            """
 
 erfarings_html = """
 <style>
@@ -159,7 +162,7 @@ ul {
         <input type="radio" name="experience" id="exp2">
 
         <label for="exp2">
-            📊 Datajournalist
+            Datajournalist
             <span class="date">aug 2025 – jan 2026</span>
         </label>
 
@@ -193,7 +196,7 @@ ul {
         <input type="radio" name="experience" id="exp3">
 
         <label for="exp3">
-            💻 Studentermedhjælper, Data Science
+            Studentermedhjælper, Data Science
             <span class="date">aug 2024 – jul 2025</span>
         </label>
 
@@ -204,7 +207,13 @@ ul {
             </div>
 
             <p>
-            Ansvarlig for at etablere en databaseret tilgang til idéudvikling.
+            Som studentermedhjælper i programudviklingen havde jeg ansvar for at etablere en databaseret tilgang til idéudviklingen.
+            Det var en helt ny 'pioner'-stilling, hvor jeg ene mand havde ansvaret og friheden til at indføre de analyser, der ville
+            give mening for idéudviklingen.
+            </p>
+
+            <p>
+            Det lykkedes mig at indføre flere gode analyseredskaber, blandt andre:
             </p>
 
             <ul>
@@ -212,7 +221,7 @@ ul {
                 <li>Sentimentanalyser</li>
                 <li>Segmentanalyser</li>
                 <li>Analyse af influencers reach og engagement</li>
-                <li>Automatisering af arbejdsopgaver</li>
+                <li>Automatisering af seertalsanalyser gennem webscraping og automatiseret databearbejdning</li>
             </ul>
 
         </div>
@@ -224,7 +233,7 @@ ul {
         <input type="radio" name="experience" id="exp4">
 
         <label for="exp4">
-            🎙️ Journalist
+            Journalist
             <span class="date">aug 2019 – dec 2022</span>
         </label>
 
@@ -235,13 +244,15 @@ ul {
             </div>
 
             <p>
-            Tre et halvt års erfaring fra DR Syd og DR Bornholm med reportage,
-            nyhedsformidling og redaktionelt ansvar.
+            Med tre og et halvt års erfaring som journalist på henholdsvis DR Syd og DR Bornholm,
+            har jeg suget til mig af kompetencer indenfor journalistisk formidling i form af bl.a. 
+            reportage og kort, effektiv og præcis nyhedsformidling.
             </p>
 
             <p>
-            Som jourhavende udviklede jeg stærke kompetencer inden for prioritering,
-            beslutningstagning og overblik på tværs af radio og dr.dk.
+            Derudover har jeg som jourhavende finpudset mine evner til at tage selvstændige redaktionelle beslutninger
+            og holde det forkromede overblik over redaktionens opgaver,
+            når ansvaret for den samlede tilstedeværelse i radioen og på dr.dk lå hos mig.
             </p>
 
         </div>
@@ -251,6 +262,29 @@ ul {
 </div>
 """
 
+erfaring = f"""            
+            <h3>
+            Erfaring
+            </h3>
+
+            {erfarings_html}
+            """
+
+komp = f"""            
+            <h3>
+            Kompetencer
+            </h3>
+
+            <div class="skills">
+                <span class="skill">Nyhedsproduktion</span>
+                <span class="skill">Nysgerrig og idérig</span>
+                <span class="skill">Engagerende digital formidling</span>
+                <span class="skill">Kreativ og positiv arbejdshest</span>
+                <span class="skill">Webscraping og databearbejdning</span>
+                <span class="skill">Struktureret og analytisk</span>
+            </div>
+            """
+
 portfolio = f"""
 <style>
 body {{
@@ -259,7 +293,7 @@ body {{
 }}
 
 .wrapper {{
-    max-width: 1400px;
+    max-width: 1200px;
     margin: auto;
 }}
 
@@ -267,6 +301,22 @@ body {{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+}}
+
+h3 {{
+    text-align: center;
+    margin-bottom: 10px;
+}}
+
+h3::after {{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 10px auto 0 auto;
+    margin-bottom: 25px;
+    background: #C8E6C9;
+    border-radius: 999px;
 }}
 
 .reveal {{
@@ -283,6 +333,23 @@ body {{
 .section {{
     margin-bottom: 50px;
 }}
+
+.skills {{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}}
+
+.skill {{
+    background: #E8F5E9;
+    border: 1px solid #C8E6C9;
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: center;
+}}
+
 
 @media (max-width: 900px) {{
     .grid {{
@@ -307,20 +374,12 @@ body {{
                 {komp}
             </div>
 
-            <div class="section reveal">
-                {animation2}
-            </div>
-
         </div>
 
         <div>
 
             <div class="section reveal">
                 {erfaring}
-            </div>
-
-            <div class="section reveal">
-                {erfarings_html}
             </div>
 
         </div>
@@ -438,8 +497,6 @@ def header():
         height=682,
     )
 
-
-
 def revealer(text,height):
     components.html(
         f"""
@@ -484,35 +541,3 @@ def revealer(text,height):
         """,
         height=height,
     )
-
-def erfaringsbokse():
-    st.markdown("")
-
-    st.markdown("")
-    with st.expander("**Studentermedhjælper** | Fremantle | aug 2024 – jul 2025"):
-        st.markdown("""
-##### Studentermedhjælper, Data Science
-*Strong Productions & Blu*
-
-Som studentermedhjælper i programudviklingen havde jeg ansvar for at etablere en databaseret tilgang til idéudviklingen.
-
-Det indførte jeg blandt andet gennem:
-
-- Statistiske analyser af trends
-- Sentimentanalyser
-- Segmentanalyser
-- Analyse af influencers reach og engagement
-- Automatisering af tilbagevendende arbejdsopgaver
-
-Arbejdet gav redaktionen et mere datadrevet grundlag for udvikling af nye formater.
-""")
-    st.markdown("")
-    with st.expander("**Journalist** | DR | aug 2019 – dec 2022"):
-        st.markdown("""
-##### Journalist
-*DR – Danmarks Radio*
-
-Med tre og et halvt års erfaring som journalist på henholdsvis DR Syd og DR Bornholm, har jeg suget til mig af kompetencer indenfor journalistisk formidling i form af bl.a. reportage og kort, effektiv og præcis nyhedsformidling. 
-
-Derudover har jeg som jourhavende finpudset mine evner til at tage selvstændige redaktionelle beslutninger og holde det forkromede overblik over redaktionens opgaver, når ansvaret for den samlede tilstedeværelse i radioen og på dr.dk lå hos mig.
-""")

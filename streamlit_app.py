@@ -2,7 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 from PIL import Image
 
-from visuals import header, revealer, erfaring, erfaringsbokse, intro, komp, animation, animation2, erfarings_html, portfolio
+from visuals import header, revealer, erfaring, intro, komp, animation, animation2, erfarings_html, portfolio
 
 im = Image.open(r"cv-billede.jpg")
 icon = r"icon3.png"
