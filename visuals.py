@@ -54,8 +54,88 @@ intro =  f"""
             </p>
 
             {animation2}
-
         """
+
+ansogning1 = """
+            <p>
+                For der er blevet langt imellem danskerne. 
+                Unge mænd og kvinder driver længere fra hinanden på det politiske spektrum, 
+                uligheden mellem by og land vokser, og en mere polariseret retorik har fundet indtog i Danmark. 
+                Derfor er der brug for journalistik, der giver perspektiv i en verden, 
+                som alt for ofte fremstilles sort/hvid. Historier, der hjælper brugerne med at forstå 
+                de store sammenhænge frem for blot at følge nyhedsstrømmen. 
+            </p>
+            """
+samling = f"""
+        <style>
+            .samling {{
+                font-size: 0.95rem;
+                font-weight: 500;
+                text-align: center;
+            }}
+        </style>
+        <div class="samling">
+            <p> Et <i>samlingspunkt.</i></p>
+        </div>"""
+samling2 = """<p>
+                Og det er DR for rigtig mange danskere.  
+                Derfor søger jeg stillingen som digital journalist i Digitale Nyhedsprodukter.
+            </p>"""
+ansogning2 = """
+        <div class="skills">
+            <p>
+                Jeg brænder nemlig for at gøre komplekse historier forståelige, engagerende og relevante for brugerne. 
+                Det gælder både i den daglige nyhedsdækning og i de større projekter, hvor der er mulighed 
+                for at gå et spadestik dybere. Som journalist på DR Syd og DR Bornholm lærte jeg at finde de vinkler 
+                og historier, der betyder noget for mennesker, og som jourhavende udviklede jeg evnen til at 
+                træffe selvstændige redaktionelle beslutninger og bevare overblikket, når tempoet er højt.
+            </p>
+            <p>
+                Samtidig har jeg bevidst søgt mod krydsfeltet mellem journalistik, data og digitale fortælleformer. 
+                Med en kandidat i Data Science fra Syddansk Universitet har jeg opbygget kompetencer inden for dataanalyse, 
+                visualisering, programmering og maskinlæring, som jeg ser som journalistiske værktøjer snarere end 
+                tekniske discipliner. For mig handler data ikke om teknologi for teknologiens skyld, 
+                men om at finde nye historier, nye vinkler og nye måder at skabe forståelse på.
+            </p>
+            <p>
+                Senest har jeg arbejdet som datajournalist hos Gravercentret, hvor jeg udviklede et projekt, 
+                der automatisk indsamlede data fra kommuner og regioner, opsummerede politiske dagsordener 
+                ved hjælp af en egenudviklet sprogmodel og gjorde materialet tilgængeligt gennem interaktive værktøjer. 
+                Projektet udsprang af mit speciale og blev til med ambitionen om at styrke den undersøgende journalistik
+                i lokale medier. Det lærte mig ikke alene at arbejde undersøgende og databaseret, 
+                men også at tænke journalistik som produkter og brugeroplevelser frem for alene artikler.
+            </p>
+            <p>
+                Netop den tankegang tiltaler mig ved Digitale Nyhedsprodukter. 
+                Jeg motiveres af at udvikle journalistik, der udnytter digitale muligheder til at gøre 
+                komplekse historier lettere at forstå og mere interessante at engagere sig i. 
+                Jeg synes, nogle af de mest spændende journalistiske produkter opstår, når stærk formidling, 
+                data, design og teknologi arbejder sammen om at besvare spørgsmålet: 
+                Hvad har brugerne egentlig brug for at forstå?
+            </p>
+            <p>
+                Som gæsteunderviser og eksaminator på DMJX har jeg samtidig fået styrket min evne til at 
+                identificere den gode historie og den stærke vinkel. Gennem vejledning af studerende og vurdering
+                af journalistiske projekter har jeg trænet mit blik for, hvad der gør journalistik relevant, 
+                vedkommende og nyskabende. Det er en erfaring, jeg vil tage med mig i mit kommende arbejde.
+            </p>
+            <p>
+                Jeg søger stillingen, fordi den kombinerer alt det, der motiverer mig mest: 
+                journalistik med samfundsmæssig betydning, digitale fortælleformer og ambitionen om konstant 
+                at udvikle nye måder at formidle de store historier på. Jeg vil gerne være med til at skabe de produkter, 
+                der får brugerne til at stoppe op, blive klogere og se verden i et større perspektiv.
+            </p>
+        </div>
+"""
+
+outro = """
+        <p>
+            Jeg ser frem til muligheden for at uddybe min motivation og fortælle mere om, 
+            hvordan jeg kan bidrage til Digitale Nyhedsprodukter.
+        </p>
+        <p>Med venlig hilsen</p>
+        <p><i>Ronja Solberg</i></p>
+"""
 
 erfarings_html = """
 <style>
@@ -277,11 +357,11 @@ komp = f"""
 
             <div class="skills">
                 <span class="skill">Nyhedsproduktion</span>
-                <span class="skill">Nysgerrig og idérig</span>
+                <span class="skill">Nysgerrig og initiativrig</span>
                 <span class="skill">Engagerende digital formidling</span>
-                <span class="skill">Kreativ og positiv arbejdshest</span>
-                <span class="skill">Webscraping og databearbejdning</span>
                 <span class="skill">Struktureret og analytisk</span>
+                <span class="skill">Webscraping og databearbejdning</span>
+                <span class="skill">Kreativ og positiv arbejdshest</span>
             </div>
             """
 
@@ -349,11 +429,13 @@ cand = f"""
     </div>
     """
 
+
 portfolio = f"""
 <style>
 body {{
     font-family: Arial, sans-serif;
     margin: 0;
+    margin-top: 20px;
 }}
 
 .wrapper {{
@@ -418,18 +500,20 @@ h3::after {{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
+    margin-top: 50px;
 }}
 
 .skill {{
-    background: #E8F5E9;
-    border: 1px solid #C8E6C9;
+    background: #A5D6A7;
+    border: 1px solid #A8D5BA;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     border-radius: 999px;
-    padding: 8px 14px;
+    padding: 12px 14px;
     font-size: 0.95rem;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
+    color: white;
 }}
-
 
 @media (max-width: 900px) {{
     .grid {{
@@ -451,7 +535,13 @@ h3::after {{
             </div>
 
             <div class="section reveal">
-                {komp}
+                {ansogning1}
+            </div>
+            <div class="section reveal">
+                {samling}
+            </div>
+            <div class="section reveal">
+                {samling2}
             </div>
 
         </div>
@@ -463,7 +553,29 @@ h3::after {{
             </div>
             
         </div>
+    </div>
 
+    <div class="reveal">
+        {ansogning2}
+    </div>
+        
+    <div class="grid">
+
+        <div>
+
+            <div class="section reveal">
+                {outro}
+            </div>
+
+        </div>
+
+        <div>
+
+            <div class="section reveal">
+                {komp}
+            </div>
+            
+        </div>
     </div>
 
     <div class="reveal">
@@ -474,15 +586,8 @@ h3::after {{
 
     <div class="reveal">
         {cand}
-    </div>
-    
-    <div style="height:10px;"></div>
-    <div class="reveal">
+        <div style="height:10px;"></div>
         <span class="divider"></span>
-    </div>
-
-    <div class="reveal">
-        {animation}
     </div>
 
 </div>
@@ -503,7 +608,6 @@ document.querySelectorAll('.reveal').forEach(el => {{
 }});
 </script>
 """
-
 
 def header():
     components.html(
