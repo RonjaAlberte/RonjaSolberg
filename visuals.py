@@ -56,12 +56,10 @@ intro =  f"""
 
 ansogning1 = """
             <p>
-                Der er blevet langt imellem danskerne. 
-                Unge mænd og kvinder driver længere fra hinanden på det politiske spektrum, 
-                uligheden mellem by og land vokser, og en mere polariseret retorik har fundet indtog i Danmark. 
-                Derfor er der brug for journalistik, der giver perspektiv i en verden, 
-                som alt for ofte fremstilles sort/hvid. Historier, der hjælper brugerne med at forstå 
-                de store sammenhænge frem for blot at følge nyhedsstrømmen. 
+            Der er blevet langt mellem danskerne. 
+            Unge mænd og kvinder driver længere fra hinanden på det politiske spektrum, 
+            uligheden mellem by og land vokser, og en mere polariseret retorik har fundet vej til Danmark. 
+            Derfor er der brug for journalistik, der skaber perspektiv og forståelse.  
             </p>
             """
 samling = f"""
@@ -80,59 +78,48 @@ samling2 = """<p>
             </p>"""
 ansogning2 = """
             <p>
-                Jeg brænder nemlig for at gøre komplekse historier forståelige, engagerende og relevante for brugerne. 
-                Det gælder både i den daglige nyhedsdækning og i de større projekter, hvor der er mulighed 
-                for at gå et spadestik dybere. Som journalist på DR Syd og DR Bornholm lærte jeg at finde de vinkler 
-                og historier, der betyder noget for mennesker, og som jourhavende udviklede jeg evnen til at 
-                træffe selvstændige redaktionelle beslutninger og bevare overblikket, når tempoet er højt.
+                Jeg brænder nemlig for at gøre komplekse historier forståelige og engagerende for brugerne. 
+                Det gælder både i den daglige nyhedsdækning og i de større signaturprodukter, hvor der er mulighed for at gå et 
+                spadestik dybere. Som journalist på DR Syd og Bornholm har jeg skærpet min sans for at finde vinkler og historier, 
+                der møder mennesker i øjenhøjde, og som jourhavende udviklede jeg evnen til at træffe hurtige selvstændige beslutninger 
+                og bevare overblikket, når tempoet er højt.
             </p>
             <p>
-                Samtidig har jeg bevidst søgt mod krydsfeltet mellem journalistik, data og digitale fortælleformer. 
-                Med en kandidat i Data Science fra Syddansk Universitet har jeg opbygget kompetencer inden for dataanalyse, 
-                visualisering, programmering og maskinlæring, som jeg ser som journalistiske værktøjer snarere end 
-                tekniske discipliner. For mig handler data ikke om teknologi for teknologiens skyld, 
-                men om at finde nye historier, nye vinkler og nye måder at skabe forståelse på.
+                Med min kandidat i Data Science har jeg bevidst søgt mod krydsfeltet mellem journalistik, data og digitale fortælleformer, 
+                og jeg ser mine kompetencer i bl.a. programmering og dataanalyse som journalistiske værktøjer, 
+                der kan kvalificere og løfte historier på en redaktion som Digitale Nyhedsprodukter. 
+                For mig handler data nemlig ikke om teknologi for teknologiens skyld, men om at finde nye historier, nye vinkler og nye måder at skabe forståelse på.
             </p>
             """
 
 ansogning3 = """
             <p>
-                Senest har jeg arbejdet som datajournalist hos Gravercentret, hvor jeg udviklede et projekt, 
-                der automatisk indsamlede data fra kommuner og regioner, opsummerede politiske dagsordener 
-                ved hjælp af en egenudviklet sprogmodel og gjorde materialet tilgængeligt gennem interaktive værktøjer. 
-                Projektet udsprang af mit speciale og blev til med ambitionen om at styrke den undersøgende journalistik
-                i lokale medier. Det lærte mig ikke alene at arbejde undersøgende og databaseret, 
-                men også at tænke journalistik som produkter og brugeroplevelser frem for alene artikler.
+                Som datajournalist hos Gravercentret udviklede jeg et værktøj, der automatisk indsamler data fra landets kommuner og regioner, 
+                bearbejder dataet, for til sidst at visualisere det på en engagerende og inddragende måde gennem en interaktiv hjemmeside. 
+                Projektet udsprang af mit speciale, og lærte mig ikke alene at arbejde undersøgende og databaseret, 
+                men også at tænke journalistik som brugeroplevelser frem for alene artikler.            
             </p>
             <p>
-                Netop den tankegang tiltaler mig ved Digitale Nyhedsprodukter. 
-                Jeg motiveres af at udvikle journalistik, der udnytter digitale muligheder til at gøre 
-                komplekse historier lettere at forstå og mere interessante at engagere sig i. 
-                Jeg synes, nogle af de mest spændende journalistiske produkter opstår, når stærk formidling, 
-                data, design og teknologi arbejder sammen om at besvare spørgsmålet: 
-                Hvad har brugerne egentlig brug for at forstå?
+                Som gæsteunderviser og eksaminator på DMJX har jeg samtidig fået styrket min evne til at identificere den gode historie og den stærke vinkel. 
+                Gennem vejledning af studerende og vurdering af journalistiske projekter har jeg trænet mit blik for, 
+                hvad der gør journalistik relevant, vedkommende og teknologisk nyskabende.
             </p>
             """
 
 ansogning4 ="""
             <p>
-                Som gæsteunderviser og eksaminator på DMJX har jeg samtidig fået styrket min evne til at 
-                identificere den gode historie og den stærke vinkel. Gennem vejledning af studerende og vurdering
-                af journalistiske projekter har jeg trænet mit blik for, hvad der gør journalistik relevant, 
-                vedkommende og nyskabende. Det er en erfaring, jeg vil tage med mig i mit kommende arbejde.
+                Det er netop det, der tiltaler mig ved arbejdet som digital journalist hos jer. 
+                Jeg motiveres af at udvikle journalistik, hvor formidling, data, design og teknologi arbejder sammen om at besvare spørgsmålet: 
+                <i>Hvad har brugerne egentlig brug for at forstå?</i>
             </p>
             <p>
                 Jeg søger stillingen, fordi den kombinerer alt det, der motiverer mig mest: 
-                journalistik med samfundsmæssig betydning, digitale fortælleformer og ambitionen om konstant 
-                at udvikle nye måder at formidle de store historier på. Jeg vil gerne være med til at skabe de produkter, 
-                der får brugerne til at stoppe op, blive klogere og se verden i et større perspektiv.
+                journalistik med samfundsmæssig betydning, digitale fortælleformer og ambitionen om konstant at udvikle nye måder at formidle de store historier på. 
+                Jeg vil gerne være med til at skabe de produkter, der får brugerne til at stoppe op, blive klogere og mere nysgerrige på verden omkring dem.
             </p>
             <p>
-                Jeg ser frem til muligheden for at uddybe min motivation og fortælle mere om, 
-                hvordan jeg kan bidrage til Digitale Nyhedsprodukter.
+                Det håber jeg, at jeg kan gøre hos jer.
             </p>
-            <p>Med venlig hilsen</p>
-            <p><i>Ronja Solberg</i></p>
             """
 
 erfarings_html = """
